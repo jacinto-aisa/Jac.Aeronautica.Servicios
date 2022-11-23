@@ -1,0 +1,13 @@
+Primero vamos a ver la gestión de las api
+https://learn.microsoft.com/es-es/training/paths/az-204-implement-api-management/
+
+Vamos a mirar lo primero: https://learn.microsoft.com/es-mx/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests
+Luego miraremos el libro de microsoft sobre contenedores y sobre aplicaciones contenerizadas.
+Crearemos el docker compose. 
+Crearemos un contenedor de sql server 2019 para que el proyecto funcione en cualquier entorno con Docker Desktop.
+A continuación:
+  Almacenar en StorageAccount en fichero.
+  Almacenar en Cosmos DB
+  Guardar cadenas de configuración en Service Vault.
+  Configurar variables de despliegue en Azure.
+  

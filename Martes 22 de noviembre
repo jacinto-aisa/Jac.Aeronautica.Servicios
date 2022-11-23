@@ -1,0 +1,32 @@
+
+  
+La idea es primero ver lo que hay hecho y dar un tiempo para completarlo algo, al menos las llamada más importantes.
+Al momento de escribir este texto, estaba implementada la llamada a un servicio ,se solicitará al alumnado que complete el resto, siguiendo el ejemplo
+y realizando las consultas con LinQ. Con esto se terminaría la parte de servicios, todos con sus bases de datos independientes y sin contenedores. 
+Para esto calculo dejarlo medio terminado en la primera parte de la sesión hasta las 18:30 O al menos avanzar algo, a partir de allí crearé un Rama denominada
+MicroServiciosBasico.
+
+Pelicula de linkedin sobre lo que vamos a realizar.
+  - EventBus.
+  - Bases de datos.
+  - Cosmos DB.
+  - Microservicios.
+
+https://www.linkedin.com/learning/azure-microservicios-avanzados-para-desarrollo-dot-net/introduccion-a-la-arquitectura-basada-en-eventos?autoSkip=true&autoplay=true&resume=false
+
+Conforme vamos avanzando en el video iremo aplicando en nuestra aplicación.
+Pienso que nos durará unos días realizar el video y el proceso.
+
+
+Faena hasta la terminación de la sesión: Azure Microservicios avanzados, Consumiendo el evento de integración desde Azure Service Bus.
+GrupoRecursos: Jac.Aeronautica
+Azure Service Bus
+Topic: avion-modificado-embarque
+Topic: tripulante-modificado-embarque
+
+Después vamos a modificar el api de embarque y vamos a generar un método GETEmbarqueUpdate (donde le pasamos un embarque), 
+el buscará ese embarque en el repositorio, si el embarqueupdate recibe un avión disinto, enviara un evento del tipo "avion-modificado-embarque", 
+además si cambian los tripulantes deberá de enviar también un evento "tripulante-modificado-embarque".
+
+Esos eventos deberán de contener el Id del embarque y el viejo avion y el nuevo avion en el caso del evento avion-modificado-embarque y 
+El Id de embarque y la lista de tripulantes original y la cambiada (recordar que la lista de tripulantes va en una cadena de texto)
