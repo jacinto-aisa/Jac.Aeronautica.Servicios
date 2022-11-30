@@ -18,7 +18,7 @@ namespace Jac.Embarque.Services.Aeronaves
             _options = new JsonSerializerOptions() {
                 PropertyNameCaseInsensitive = true
             };
-            cliente.BaseAddress = new Uri("http://localhost:5200/api/Aeronaves/");
+            cliente.BaseAddress = new Uri("http://jac.aeronaves/api/Aeronaves/");
 
         }
         public async Task<List<Aeronave>?> DameTodos()

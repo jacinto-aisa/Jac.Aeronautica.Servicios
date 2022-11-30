@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jac.Aeronaves.Test", "Jac.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jac.Embarque", "Jac.Embarque\Jac.Embarque.csproj", "{46A8CCE0-2AD2-45DE-8B40-E20B2EB14B66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jac.Embarque.Test", "Jac.Embarque.Test\Jac.Embarque.Test.csproj", "{3ED4387E-3A8B-4033-973C-3F85C1E60879}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jac.Embarque.Test", "Jac.Embarque.Test\Jac.Embarque.Test.csproj", "{3ED4387E-3A8B-4033-973C-3F85C1E60879}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{328BA77E-C1F5-4933-A816-60A819641C29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{3ED4387E-3A8B-4033-973C-3F85C1E60879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ED4387E-3A8B-4033-973C-3F85C1E60879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ED4387E-3A8B-4033-973C-3F85C1E60879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328BA77E-C1F5-4933-A816-60A819641C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328BA77E-C1F5-4933-A816-60A819641C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328BA77E-C1F5-4933-A816-60A819641C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328BA77E-C1F5-4933-A816-60A819641C29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

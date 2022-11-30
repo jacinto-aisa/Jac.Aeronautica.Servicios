@@ -18,7 +18,7 @@ namespace Jac.Embarque.Services.Tripulantes
             {
                 PropertyNameCaseInsensitive = true
             };
-            cliente.BaseAddress = new Uri("http://localhost:5100/api/Tripulantes/");
+            cliente.BaseAddress = new Uri("http://jac.tripulaciones/api/Tripulantes/");
 
         }
 

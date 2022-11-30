@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  jac.aeronaves:
+    image: ${DOCKER_REGISTRY-}jacaeronaves
+    build:
+      context: .
+      dockerfile: Jac.Aeronaves/Dockerfile
+    ports: 
+      - "5200:80"
+    environment:
+      - Backendurl="http://jac.aeronaves"
+
+  jac.embarque:
+    image: ${DOCKER_REGISTRY-}jacembarque
+    build:
+      context: .
+      dockerfile: Jac.Embarque/Dockerfile
+    ports:
+      - "5210:80"
+    environment:
+      - Backendurl="http://jac.embarque"
+    depends_on:
+      - jac.tripulantes
+      - jac.aeronaves
+
+
+  jac.tripulantes:
+    image: ${DOCKER_REGISTRY-}jactripulantes
+    build:
+      context: .
+      dockerfile: Jac.Tripulantes/Dockerfile
+    ports:
+      - "5100:80"
+    environment:
+      - Backendurl="http://jac.tripulantes"
